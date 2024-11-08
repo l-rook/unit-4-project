@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="delete-container">
+    <h2>Are you sure you want to delete "{{ product.name }}"?</h2>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="button delete-confirm-button">Yes, delete</button>
+        <a href="{% url 'product_detail' product.pk %}" class="button cancel-button">Cancel</a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ddd; /* Slightly lighter shade for hover effect */
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #555;
+}
+
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #333;
+}
+
+.product-list {
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    width: 200px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-title-link {
+    text-decoration: none;
+    color: black;
+}
+
+.product-title-link:hover {
+    color: #333;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1em;
+    color: #666;
+}
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.save-button {
+    background-color: #333;
+    color: #fff;
+}
+
+.delete-confirm-button {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.cancel-button {
+    background-color: #ddd;
+    color: #333;
+}
+
+
+.product-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.product-detail h1 {
+    color: #333;
+}
+
+.form-container, .delete-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form-container h1, .delete-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.place-order {
+    font-size: 1.5em; /* Make the text larger */
+    font-weight: bold; /* Make the text bold */
+    display: inline-block;
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: black; /* Black background for visibility */
+    color: white; /* White text for contrast */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    margin-top: 15px;
+}
+
+.large-bold:hover {
+    background-color: #333; /* Darken on hover */
+}

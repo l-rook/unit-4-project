@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="product-list">
+    <h1>Product List</h1>
+    <div class="product-container">
+        {% for product in products %}
+            <div class="product-card">
+                <a href="{% url 'product_detail' product.pk %}">
+                    <h2 class="product-title">{{ product.name }}</h2>
+                </a>
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image">
+                <p class="product-price">${{ product.price }}</p>
+            </div>
+        {% empty %}
+            <p>No products available.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

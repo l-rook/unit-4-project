@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }}{% endblock %}
+{% block content %}
+<div class="product-detail">
+    <h1>{{ product.name }}</h1>
+    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image">
+    <p>Price: ${{ product.price }}</p>
+    <p>{{ product.description }}</p>
+    
+    {% if is_creator %}
+        <a href="{% url 'edit_product' product.id %}" class="button">Edit</a>
+        <form action="{% url 'delete_product' product.id %}" method="POST" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" class="button delete">Delete</button>
+        </form>
+    {% endif %}
+    <br>
+    <a href="{% url 'place_order' product.id %}" class="place-order">Place Order</a>
+</div>
+{% endblock %}
